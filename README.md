@@ -1,14 +1,6 @@
 # boxdrawing
 ```
 @font-face {
- font-family: osaka;
- src: url('https://gnjo.github.io/boxdrawing/OsakaMono.otf') format('opentype');
- font-weight: normal;
- font-style: monospace;
- /*need line-height:1.0*/
-}
-
-@font-face {
  font-family: notoj;
  src: url('https://gnjo.github.io/boxdrawing/notoj.ttf') format('truetype');
  font-weight: normal;
