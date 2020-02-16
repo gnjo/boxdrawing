@@ -1,7 +1,7 @@
 # boxdrawing
 ```
 
-let abox=boxdrawing(w,h)
+let abox=boxdrawing(w+2,h+2) //always border+2 
 abox(str||ary,tr,br,n)
 ```
 ```
