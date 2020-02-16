@@ -1,4 +1,11 @@
 # boxdrawing
+```
+/*notoj*/
+@font-face {
+ font-family: 'NotoJ',notoj; font-style: normal; font-weight: 400;
+ src: url(' https://gnjo.github.io/boxdrawing/notoj.ttf')  format('truetype');
+}
+```
 
 ```
 
