@@ -10,9 +10,25 @@
 
 ```
 ```
+fn.ostr=(base,tail)=>{ //overwite str
+ return base.slice(0,-1*tail.length) + tail
+}
+let boxdrawing=(text,w,h,lcr,strtr,strbr)=>{
+ //return ary
+ let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
+ ,bars=fn.fstr(bar,w)
+ ,f=(lcr==='r')?fn.lpad:(lcr==='c')?fn.cpad:fn.rpad
+ ,body=text.split('\n').slice(0,h).map((d,i,o)=>{
+  //
+  if(i===0&&strtr)return vtx+fn.ostr(f(d,w,sp),strtr)+vtx
+  if((i===o.length-1)&&strbr)return vtx+fn.ostr(f(d,w,sp),strbr)+vtx
+  return vtx+f(d,w,sp)+vtx
+  //
+ })
+ ;
+ return [].concat(tl+bars+tr,body,bl+bars+br)
+}
 
-let abox=boxdrawing(w+2,h+2) //always border+2 
-abox(str||ary,tr,br,n)
 ```
 ```
 box32(lines,type)
