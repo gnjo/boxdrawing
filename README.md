@@ -7,7 +7,13 @@ abox(str||ary,tr,br,n)
 ```
 ```
 box32(lines,type)
-//type m|f|h|l|s > mes fitmes hint list status
+//type m|f|h|l|s|p > mes fitmes hint list party shop
+
+let mes=box32(3,'m')  //mes(str,char) //char is bottom right
+let fitmes=box32(1,'f') //fitmes(str,min) //keep min length
+let hint=box32(4,'h') //hint(str) //if over show page　０１／０１
+let list=box32(7,'l') //list(title,str|ary,char,n) //if over show page, title keep
+let party=box32(7,'p') //party(str|ary,char,n) //n=0 is party
 
 ```
 
