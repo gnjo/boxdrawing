@@ -14,7 +14,7 @@ let fitmes=box32(1,'f') //fitmes(str,min) //keep min length
 let hint=box32(4,'h') //hint(str) //if over show page　０１／０１
 let list=box32(7,'l') //list(title,str|ary,char,n) //if over show page, title keep
 let party=box32(7,'p') //party(str|ary,char,n) //n=0 is party
-let viewmap=box(32,'v') //viewmap(title,str|ary,char,x,y)
+let viewmap=box(32,'v') //viewmap(title,str|ary,nowchar,nx,ny,selchar,sx,sy)
 ```
 
 ```
