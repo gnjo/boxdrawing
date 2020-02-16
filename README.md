@@ -29,9 +29,9 @@ let name='シキシャ'
 ,stats='毒！２００｀２０＠２５'
 ,map='・・・・・・・'
 ,aa='＊　ああっと　＊'
-//10 12 10
-//10 22
-fn.q('pre').textContent=fn.gpad(name,10,'＊')+fn.gpad(stats,12)+fn.gpad(map,10,'　','r')
-fn.q('pre.x').textContent=fn.cpad(aa,32,'　')
+//10 12 8
+//10 20
+fn.q('pre').textContent=fn.gpad(name,10,'＊')+fn.gpad(stats,12)+fn.gpad(map,8,'　','r')
+fn.q('pre.x').textContent=fn.cpad(aa,30,'　')
 */
 ```
