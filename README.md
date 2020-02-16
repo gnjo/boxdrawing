@@ -6,7 +6,9 @@ let abox=boxdrawing(w+2,h+2) //always border+2
 abox(str||ary,tr,br,n)
 ```
 ```
-box32(lines,bcflg) //box center flg
+box32(lines,type)
+//type m|f|h|l|s > mes fitmes hint list status
+
 ```
 
 ```
