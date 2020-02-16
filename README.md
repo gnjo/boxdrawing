@@ -7,7 +7,7 @@ abox(str||ary,tr,br,n)
 ```
 ```
 box32(lines,type)
-//type m|f|h|l|s|p > mes fitmes hint list party shop
+//type m|f|h|l|s|p|v > mes fitmes hint list party shop viewmap
 
 let mes=box32(3,'m')  //mes(str,char) //char is bottom right
 let fitmes=box32(1,'f') //fitmes(str,min) //keep min length
