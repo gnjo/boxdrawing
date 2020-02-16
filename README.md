@@ -10,9 +10,6 @@
 
 ```
 ```
-fn.ostr=(base,tail)=>{ //overwite str
- return base.slice(0,-1*tail.length) + tail
-}
 let boxdrawing=(text,w,h,lcr,strtr,strbr)=>{
  //return ary
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
@@ -61,6 +58,9 @@ fn.gpad=(str,len,head,lcr)=>{
  if(lcr==='c') return fn.cpad(str,len,'　')
  if(lcr==='r') return fn.lpad(str,len,'　')
  return fn.rpad(str,len,'　') //lcr==='l'
+}
+fn.ostr=(base,tail)=>{ //overwite str
+ return base.slice(0,-1*tail.length) + tail
 }
 /*
 let name='シキシャ'
