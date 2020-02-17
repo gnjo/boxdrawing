@@ -1,0 +1,16 @@
+@font-face {
+ font-family: notoj;
+ src: url('https://gnjo.github.io/boxdrawing/notoj.ttf') format('truetype');
+ font-weight: normal;
+ font-style: monospace;
+ /*need line-height:1.0*/
+}
+svg{
+ background-color:black;
+ transform-origin:0 0;
+ transform:scale(2,2);
+}
+/**/
+.white{
+ fill:#fff;
+}
