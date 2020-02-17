@@ -1,7 +1,7 @@
 //
 ;(function(root){
 //fn.js
-let fn=fn.root||{}
+let fn=root.fn||{}
 //
 fn.rtrim=s=>s.replace(/\s+$/,"")
 fn.fstr=(sp,len)=>Array.from({length:len||0}).map(d=>sp).join('')
