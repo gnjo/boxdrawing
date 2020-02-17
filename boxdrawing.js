@@ -22,6 +22,9 @@ fn.gpad=(str,len,head,lcr)=>{
 fn.ostr=(base,tail)=>{ //overwite str
  return base.slice(0,-1*tail.length) + tail
 }
+fn.blinkflg=(c,range)=>{
+ return range?(c%range*2 <range):false
+}
 /*
 let name='シキシャ'
 ,stats='毒！２００｀２０＠２５'
