@@ -36,10 +36,12 @@ fn.q('pre').textContent=fn.gpad(name,10,'＊')+fn.gpad(stats,12)+fn.gpad(map,8,'
 fn.q('pre.x').textContent=fn.cpad(aa,30,'　')
 */
 
-let boxdrawing=(text,w,h,lcr,strtr,strbr)=>{
+let boxdrawing=(text,w,h,lcr,strtr,strbr,type2flg)=>{
  //return ary
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
- ,bars=fn.fstr(bar,w)
+ if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
+ ;
+ let bars=fn.fstr(bar,w)
  ,f=(lcr==='r')?fn.lpad:(lcr==='c')?fn.cpad:fn.rpad
  ,body=text.split('\n').slice(0,h).map((d,i,o)=>{
   //
