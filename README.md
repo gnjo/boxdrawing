@@ -1,5 +1,10 @@
 # boxdrawing
 ```
+ ─　│　┌　┐　┘　└　├　┬　┤　┴　┼
+ ━　┃　┏　┓　┛　┗　┣　┳　┫　┻　╋
+ ┠　┯　┨　┷　┿　┝　┰　┥　┸　╂
+```
+```
 @font-face {
  font-family: notoj;
  src: url('https://gnjo.github.io/boxdrawing/notoj.ttf') format('truetype');
