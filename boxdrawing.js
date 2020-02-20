@@ -41,9 +41,11 @@ let boxdrawing=(text,w,h,lcr,strtr,strbr,type2flg)=>{
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
  if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
  ;
+ let spbar=fn.fstr(sp,w)
+ let t=text+'\n'+Array.from({length:h}).map(d=>spbar).join('\n')
  let bars=fn.fstr(bar,w)
  ,f=(lcr==='r')?fn.lpad:(lcr==='c')?fn.cpad:fn.rpad
- ,body=text.split('\n').slice(0,h).map((d,i,o)=>{
+ ,body=t.split('\n').slice(0,h).map((d,i,o)=>{
   //
   if(i===0&&strtr)return vtx+fn.ostr(f(d,w,sp),strtr)+vtx
   if((i===o.length-1)&&strbr)return vtx+fn.ostr(f(d,w,sp),strbr)+vtx
