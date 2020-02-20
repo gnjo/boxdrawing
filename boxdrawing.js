@@ -25,6 +25,10 @@ fn.ostr=(base,tail)=>{ //overwite str
 fn.blinkflg=(c,range)=>{
  return range?(c%range*2 <range):false
 }
+fn.headmark=(s,n,mark,emp)=>{
+ return s.split('\n').map((d,i)=>(i===n)?mark+d:emp+d).join('\n')
+}
+
 /*
 let name='シキシャ'
 ,stats='毒！２００｀２０＠２５'
