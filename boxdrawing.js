@@ -61,10 +61,10 @@ fn.s2b=(s)=>{
  var str=''+s,reg,i=0
  for(i=0; i<s2bmap.aft.length; i++){
   reg = new RegExp(s2bmap.bef[i],"g");
-  s=s.replace(reg, s2bmap.aft[i]);
+  str=str.replace(reg, s2bmap.aft[i]);
  }
- s=s.replace(/\\/g,"￥");//special
- return s;
+ str=str.replace(/\\/g,"￥");//special
+ return str;
 }
 
 /*
