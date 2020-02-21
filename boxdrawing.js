@@ -20,8 +20,11 @@ fn.gpad=(str,len,head,lcr)=>{
  return fn.rpad(str,len,'　') //lcr==='l'
 }
 fn.ostr=(base,tail)=>{ //overwite str
+ tail=tail+'';//bugfix
+ if(tail.length===0)return base;//bugfix
  return base.slice(0,-1*tail.length) + tail
 }
+
 fn.blinkflg=(c,range)=>{
  return range?(c%range*2 <range):false
 }
