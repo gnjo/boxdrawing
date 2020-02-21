@@ -85,4 +85,5 @@ let name='シキシャ'
 fn.q('pre').textContent=fn.gpad(name,10,'＊')+fn.gpad(stats,12)+fn.gpad(map,8,'　','r')
 fn.q('pre.x').textContent=fn.cpad(aa,30,'　')
 */
+fn.s2b
 ```
