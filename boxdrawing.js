@@ -99,6 +99,52 @@ let boxdrawing=(text,w,h,lcr,strtr,strbr,type2flg)=>{
  ;
  return [].concat(tl+bars+tr,body,bl+bars+br)
 }
+let boxdrawing2=(text,w,h,lcr,strtl,strtr,strbl,strbr,type2flg)=>{
+ //return ary
+ let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
+ if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
+ ;
+ text=fn.s2b(text),strtr=fn.s2b(strtr),strbr=fn.s2b(strbr)//small to big
+ strtl=fn.s2b(strtl),strbl=fn.s2b(strbl)
+ ;
+ let spbar=fn.fstr(sp,w)
+ let t=text+'\n'+Array.from({length:h}).map(d=>spbar).join('\n')
+ let bars=fn.fstr(bar,w)
+ ,f=(lcr==='r')?fn.lpad:(lcr==='c')?fn.cpad:fn.rpad
+ ,body=t.split('\n').slice(0,h).map((d,i,o)=>{
+  return vtx+f(d,w,sp)+vtx
+ })
+ f=fn.rpad
+ //console.log(strtl,strbl,f(strtl,w,bar))
+ let head=tl+fn.ostr(f(strtl,w,bar),strtr)+tr//+
+ let bottom=bl+fn.ostr(f(strbl,w,bar),strbr)+br
+ return [].concat(head,body,bottom)
+}
+
+let boxdrawing3=(title,w,h,margin,type2flg)=>{
+ //return ary
+ let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
+ if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
+ ;
+ title=fn.s2b(title)
+ ;
+ let m=''
+ if(margin) w=w-margin*2,m=fn.fstr(sp,margin)
+ let spbar=fn.fstr(sp,w)
+ let body=Array.from({length:h}).map(d=>m+vtx+spbar+vtx+m)
+ let bars=fn.fstr(bar,w)
+ let head=m+tl+fn.cpad(title,w,bar)+tr+m//+
+ let bottom=m+bl+bars+br+m
+ return [].concat(head,body,bottom)
+}
+
+ ///
  root.fn=fn
  root.boxdrawing=boxdrawing
+ root.boxdrawing2=boxdrawing2
+ root.boxdrawing3=boxdrawing3
+ root.talkbox=boxdrawing
+ root.shopbox=boxdrawing2
+ root.framebox=boxdrawing3
+ ///
 })(this);
