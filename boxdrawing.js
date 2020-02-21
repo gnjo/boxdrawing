@@ -54,7 +54,8 @@ const s2bmap=(()=>{
  // s=s.replace(/\\/g,"￥"); is special
 })();
 fn.s2b=(s)=>{
- var str=s||'',reg,i=0
+ if(s===void 0)return s;
+ var str=s,reg,i=0
  for(i=0; i<s2bmap.aft.length; i++){
   reg = new RegExp(s2bmap.bef[i],"g");
   s=s.replace(reg, s2bmap.aft[i]);
