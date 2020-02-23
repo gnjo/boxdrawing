@@ -1,0 +1,15 @@
+@font-face {
+ font-family: boxdrawing;
+ src: url("https://gnjo.github.io/boxdrawing/notoj.ttf") format("truetype");
+ font-weight: normal;
+ font-style: monospace;
+ /*need line-height:1.0*/
+}
+
+@font-face {
+ font-family: boxdrawing;
+ src: url("https://gnjo.github.io/wireframebeta/dq10c.ttf?v=1") format("truetype");
+ font-weight: normal;
+ font-style: monospace;
+ unicode-range: U+0021-007E;/*over write latin*/
+}
