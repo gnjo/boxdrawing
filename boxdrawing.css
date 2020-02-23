@@ -1,0 +1,7 @@
+@font-face {
+ font-family: boxdrawing;
+ src: url('https://gnjo.github.io/boxdrawing/notoj.ttf') format('truetype');
+ font-weight: normal;
+ font-style: monospace;
+ /*need line-height:1.0*/
+}
