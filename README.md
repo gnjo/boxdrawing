@@ -7,7 +7,7 @@
 ```
 @font-face {
  font-family: strong;
- src: url('https://gnjo.github.io/boxdrawing/x8y12pxTheStrongGamer.ttf') format('truetype');
+ src: url("https://gnjo.github.io/boxdrawing/x8y12pxTheStrongGamer.ttf") format("truetype");
  font-weight: normal;
  font-style: monospace;
  /*need line-height:1.0*/
@@ -15,7 +15,7 @@
 
 @font-face {
  font-family: notoj;
- src: url('https://gnjo.github.io/boxdrawing/notoj.ttf') format('truetype');
+ src: url("https://gnjo.github.io/boxdrawing/notoj.ttf") format("truetype");
  font-weight: normal;
  font-style: monospace;
  /*need line-height:1.0*/
