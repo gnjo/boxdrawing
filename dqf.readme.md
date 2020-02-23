@@ -15,7 +15,9 @@ save is 2 files
 
 ![fig1](bitfontmaker2.png)
 
-
+## check griff
+https://opentype.js.org/glyph-inspector.html
+## tips
 ```
 tips dev tool
 $('.settingsetting').hide(); $('#settings').hide();
