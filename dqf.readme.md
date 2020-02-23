@@ -12,4 +12,16 @@ save is 2 files
 >(right down sight)bulid > ...ttf
 >look under fig1
 ```
+
 ![fig1](bitfontmaker2.png)
+
+
+```
+tips dev tool
+$('.settingsetting').hide(); $('#settings').hide();
+build()
+
+```
+```
+function charcode(d){return String.fromCharCode(d)}
+```
