@@ -1,4 +1,6 @@
-//
+/*history
+v2.0 必要な場合は上位でfn.s2bする事。
+*/
 ;(function(root){
 //fn.js
 let fn=root.fn||{}
@@ -83,7 +85,7 @@ let boxdrawing=(text,w,h,lcr,strtr,strbr,type2flg)=>{
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
  if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
  ;
- text=fn.s2b(text),strtr=fn.s2b(strtr),strbr=fn.s2b(strbr)//small to big
+ //text=fn.s2b(text),strtr=fn.s2b(strtr),strbr=fn.s2b(strbr)//small to big
  ;
  let spbar=fn.fstr(sp,w)
  let t=text+'\n'+Array.from({length:h}).map(d=>spbar).join('\n')
@@ -104,8 +106,8 @@ let boxdrawing2=(text,w,h,lcr,strtl,strtr,strbl,strbr,type2flg)=>{
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
  if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
  ;
- text=fn.s2b(text),strtr=fn.s2b(strtr),strbr=fn.s2b(strbr)//small to big
- strtl=fn.s2b(strtl),strbl=fn.s2b(strbl)
+ //text=fn.s2b(text),strtr=fn.s2b(strtr),strbr=fn.s2b(strbr)//small to big
+ //strtl=fn.s2b(strtl),strbl=fn.s2b(strbl)
  ;
  let spbar=fn.fstr(sp,w)
  let t=text+'\n'+Array.from({length:h}).map(d=>spbar).join('\n')
@@ -126,7 +128,7 @@ let boxdrawing3=(title,w,h,margin,type2flg)=>{
  let bar='━',vtx='┃',tl='┏',tr='┓',bl='┗',br='┛',sp='　'
  if(type2flg) bar = '─',vtx = '│',tl = '┌',tr = '┐',bl = '└',br = '┘'
  ;
- title=fn.s2b(title)
+ //title=fn.s2b(title)
  ;
  let m=''
  if(margin) w=w-margin*2,m=fn.fstr(sp,margin)
