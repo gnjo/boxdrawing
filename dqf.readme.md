@@ -12,7 +12,10 @@ save is 2 files
 >(right down sight)bulid > ...ttf
 >look under fig1
 ```
-
+```
+10dec 0ac
+or
+```
 ![fig1](bitfontmaker2.png)
 
 ## check griff
