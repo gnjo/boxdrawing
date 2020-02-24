@@ -13,8 +13,9 @@ save is 2 files
 >look under fig1
 ```
 ```
-10dec 0ac
+10ac 0dc
 or
+9ac 1dc
 ```
 ![fig1](bitfontmaker2.png)
 
