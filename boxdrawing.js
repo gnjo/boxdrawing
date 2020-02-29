@@ -33,6 +33,9 @@ fn.blinkflg=(c,range)=>{
 fn.headmark=(s,n,mark,emp)=>{
  return s.split('\n').map((d,i)=>(i===n)?mark+d:emp+d).join('\n')
 }
+fn.maxlen=(ary)=>{
+ return ary.map(d=>d.length).sort((a,b)=>a-b).pop()
+}
 
 const s2bmap=(()=>{
  var aftnum = new Array("０","１","２","３","４","５","６","７","８","９");
