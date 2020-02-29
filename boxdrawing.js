@@ -37,6 +37,10 @@ fn.maxlen=(ary)=>{
  return ary.map(d=>d.length).sort((a,b)=>a-b).pop()
 }
 
+fn.arraychunk = ([...array], size = 1) => {
+  return array.reduce((acc, value, index) => index % size ? acc : [...acc, array.slice(index, index + size)], []);
+}
+
 const s2bmap=(()=>{
  var aftnum = new Array("０","１","２","３","４","５","６","７","８","９");
  var aftalph = new Array("Ａ","Ｂ","Ｃ","Ｄ","Ｅ","Ｆ","Ｇ","Ｈ","Ｉ","Ｊ",
